@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c9f397470275a4890f1fa6d8f36806, type: 3}
+  m_Name: StartData
+  m_EditorClassIdentifier: 
+  <LvlsData>k__BackingField:
+  - <LvlNumber>k__BackingField: 0
+    <IsOpen>k__BackingField: 1
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 1
+    <IsOpen>k__BackingField: 1
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 2
+    <IsOpen>k__BackingField: 1
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 3
+    <IsOpen>k__BackingField: 1
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 4
+    <IsOpen>k__BackingField: 1
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 5
+    <IsOpen>k__BackingField: 1
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 6
+    <IsOpen>k__BackingField: 1
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 7
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 8
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 9
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 10
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 11
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 12
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 13
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 14
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 15
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0
+  - <LvlNumber>k__BackingField: 16
+    <IsOpen>k__BackingField: 0
+    <DonePercent>k__BackingField: 0
+    <Tries>k__BackingField: 0

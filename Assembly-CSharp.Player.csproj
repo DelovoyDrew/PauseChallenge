@@ -59,30 +59,42 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\CustomRBT\BannerYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\RewardedAd.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\InfoYG\InfoYG.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\ResultShower.cs" />
+    <Compile Include="Assets\Effects\Q Vignette\Scripts\Q_Vignette_Split.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\LanguageExample.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\ConfigYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\DebugViewing.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\YandexMetricaExample.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\ReceivingPurchaseExample.cs" />
+    <Compile Include="Assets\Project\Scripts\GlobalSaver.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SaverTest.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\ConditionallyVisiblePropertyDrawer\Runtime\ConditionallyVisibleAttribute.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PurchaseYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\JsonUtils.cs" />
+    <Compile Include="Assets\Project\Scripts\MenuInitializer.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\GetPlayerData.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SwitchSceneTest.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\ConsumePurchasesYG.cs" />
+    <Compile Include="Assets\Effects\Q Vignette\Demos\DemoStuff\DemoScripts\Q_Rotator.cs" />
+    <Compile Include="Assets\Effects\Q Vignette\Scripts\Q_Vignette_Single.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\LangYGAdditionalText.cs" />
+    <Compile Include="Assets\Project\Scripts\VideoConfig.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LBPlayerDataYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\YandexMetrica.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\VideoTimer.cs" />
     <Compile Include="Assets\YandexGame\DebuggingMode\Scripts\DebuggingModeYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GetPlayerYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language Translation\LanguageYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ReviewYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexGame.cs" />
+    <Compile Include="Assets\Project\Scripts\MenuLvlVisuals.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GraphicSettingsYG.cs" />
     <Compile Include="Assets\YandexGame\WorkingData\SavesYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\UtilsPayments.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\UtilsLB.cs" />
+    <Compile Include="Assets\Effects\Q Vignette\Scripts\Q_Vignette_Base.cs" />
+    <Compile Include="Assets\Project\Scripts\LvlData.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\VideoStopper.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\OpenAuthorizationDialog.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\NewResultLBExample.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ActivityOnAuthorizationYG.cs" />
@@ -92,10 +104,19 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\ForVisualScriptYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PaymentsCatalogYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ImageLoadYG.cs" />
+    <Compile Include="Assets\Project\Scripts\ProgressController.cs" />
+    <Compile Include="Assets\Project\Scripts\MenuLvl.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ViewingAdsYG.cs" />
+    <Compile Include="Assets\Project\Scripts\LvlsConfig.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LeaderboardYG.cs" />
+    <Compile Include="Assets\Project\Scripts\Menu.cs" />
+    <Compile Include="Assets\Project\Scripts\Scenes.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\Game.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\GamePanelUI.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\Mistakes.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Effects\Q Vignette\ReadMe.txt" />
     <None Include="Assets\WebGLTemplates\Notices.txt" />
     <None Include="Assets\WebGLTemplates\LICENSE.txt" />
     <None Include="Assets\YandexGame\Readme.txt" />
@@ -743,10 +764,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{7CEB6D20-C3EC-2616-AA9A-57220925D9C2}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="MyScripts.Player.csproj">
-      <Project>{419089E4-AA0B-2A1E-A3F1-7D1B774D81DB}</Project>
-      <Name>MyScripts.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -962,10 +962,6 @@
       <Project>{0565A1D6-106A-7543-9674-7592C6EC689E}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
-    <ProjectReference Include="MyScripts.csproj">
-      <Project>{7A17645A-8503-D25B-E21F-0FB377EC2C7B}</Project>
-      <Name>MyScripts</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

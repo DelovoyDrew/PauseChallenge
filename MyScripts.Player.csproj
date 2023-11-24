@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Project\Scripts\VideoConfig.cs" />
     <Compile Include="Assets\Project\Scripts\VideoStopper.cs" />
+    <Compile Include="Assets\Project\Scripts\ResultShower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Project\Scripts\MyScripts.asmdef" />

@@ -1,19 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.Video;
 
 public class VideoStopper : MonoBehaviour
 {
-    [SerializeField] private VideoPlayer _videoPlayer;
+    public static VideoStopper Instance { get; private set; }
 
+    public Action OnWin;
+    public Action<float> OnPause;
+
+    [SerializeField] private VideoPlayer _videoPlayer;
     [SerializeField] private VideoConfig _currentConfig;
 
     private float _mostFarDistance;
+    private bool _isGameEnded;
 
     private void Awake()
     {
+        if(Instance == null)
+            Instance = this;
+
         _mostFarDistance = FindMostFarDistance();
+
+        OnPause += (float value) => {
+            _videoPlayer.Pause();
+        };
+
+        OnWin += () => {
+            _isGameEnded = true;
+            Debug.Log("win");
+        };
+
     }
 
     public void Initialize(VideoConfig config)
@@ -26,22 +43,38 @@ public class VideoStopper : MonoBehaviour
 
     public void StopVideo()
     {
-        _videoPlayer.Pause();
+        if (_isGameEnded)
+            return;
+
+        if (_videoPlayer.isPlaying)
+        {
+            OnPause?.Invoke(FindPercent());
+        }
+        else
+        {
+            _videoPlayer.Play();
+        }
+
+    }
+
+    private float FindPercent()
+    {
         var time = _videoPlayer.clockTime;
-        FindClosePercent();
+        var percent = FindClosePercent();
 
         foreach (var item in _currentConfig.WinTime)
         {
-            if(time >= item.x && time <= item.y)
+            if (time >= item.x && time <= item.y)
             {
-                Debug.Log("win");
-                return;
+                OnWin?.Invoke();
+                return 100;
             }
         }
-        _videoPlayer.Play();
+
+        return percent;
     }
 
-    private int FindClosePercent()
+    private float FindClosePercent()
     {
         float distance = float.MaxValue;
         var stopTime = _videoPlayer.clockTime;
@@ -67,9 +100,7 @@ public class VideoStopper : MonoBehaviour
             
         }
 
-        Debug.Log("Percent: " + (int)((distance / _mostFarDistance) * 100) + "%");
-
-        return 0;
+        return distance / _mostFarDistance * 100;
     }
 
     private float FindMostFarDistance()
@@ -88,8 +119,6 @@ public class VideoStopper : MonoBehaviour
         var newcurrDistance = Mathf.Abs((float)_currentConfig.Clip.length - _currentConfig.WinTime[_currentConfig.WinTime.Count - 1].y);
         if (distance < newcurrDistance)
             distance = newcurrDistance;
-
-        Debug.Log("Max DIstance: " + distance);
 
         return distance;
     }
