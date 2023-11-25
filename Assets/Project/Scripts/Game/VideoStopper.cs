@@ -33,11 +33,18 @@ public class VideoStopper : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        Initialize(GlobalSaver.Instance.VideoLvl);
+    }
+
     public void Initialize(VideoConfig config)
     {
         _currentConfig = config;
 
-        _videoPlayer.clip = _currentConfig.Clip;
+        _videoPlayer.url = _currentConfig.Path.ToString();
+        Debug.Log(_currentConfig.Path.ToString());
+        _videoPlayer.Play();
         _mostFarDistance = FindMostFarDistance();
     }
 
@@ -66,7 +73,7 @@ public class VideoStopper : MonoBehaviour
 
     private float FindPercent()
     {
-        var time = _videoPlayer.clockTime;
+        var time = _videoPlayer.time;
         var percent = FindClosePercent();
 
         foreach (var item in _currentConfig.WinTime)
@@ -84,7 +91,7 @@ public class VideoStopper : MonoBehaviour
     private float FindClosePercent()
     {
         float distance = float.MaxValue;
-        var stopTime = _videoPlayer.clockTime;
+        var stopTime = _videoPlayer.time;
 
         foreach (var item in _currentConfig.WinTime)
         {
@@ -123,7 +130,7 @@ public class VideoStopper : MonoBehaviour
                 distance = currDistance;
         }
 
-        var newcurrDistance = Mathf.Abs((float)_currentConfig.Clip.length - _currentConfig.WinTime[_currentConfig.WinTime.Count - 1].y);
+        var newcurrDistance = Mathf.Abs((float)_videoPlayer.length - _currentConfig.WinTime[_currentConfig.WinTime.Count - 1].y);
         if (distance < newcurrDistance)
             distance = newcurrDistance;
 

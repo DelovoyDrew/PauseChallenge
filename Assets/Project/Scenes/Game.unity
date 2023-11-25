@@ -921,6 +921,7 @@ MonoBehaviour:
   _loosePanel: {fileID: 383335371}
   _winPanel: {fileID: 1667018190}
   _gamePanel: {fileID: 2079168723}
+  _looseDelay: 0
 --- !u!1 &506150420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,7 +1871,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116449659}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ee356bf770fd71646bfe3c0f7d54ba81, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}

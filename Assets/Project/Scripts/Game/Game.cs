@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,8 @@ public class Game : MonoBehaviour
     [SerializeField] private GamePanelUI _loosePanel;
     [SerializeField] private GamePanelUI _winPanel;
     [SerializeField] private GamePanelUI _gamePanel;
+
+    [SerializeField] private float _looseDelay;
 
     private void Start()
     {
@@ -39,8 +42,7 @@ public class Game : MonoBehaviour
         {
             if(_mistakes.IsLooseGame())
             {
-                _loosePanel.gameObject.SetActive(true);
-                _gamePanel.gameObject.SetActive(false);
+                StartCoroutine(LooseRoutine());
             }
         }
         else
@@ -48,5 +50,12 @@ public class Game : MonoBehaviour
             _winPanel.gameObject.SetActive(true);
             _gamePanel.gameObject.SetActive(false);
         }
+    }
+
+    private IEnumerator LooseRoutine()
+    {
+        yield return new WaitForSeconds(_looseDelay);
+        _loosePanel.gameObject.SetActive(true);
+        _gamePanel.gameObject.SetActive(false);
     }
 }
