@@ -41,6 +41,13 @@ public class VideoStopper : MonoBehaviour
         _mostFarDistance = FindMostFarDistance();
     }
 
+    public void RestartVideo()
+    {
+        _videoPlayer.Stop();
+        _videoPlayer.Play();
+        _isGameEnded = false;
+    }
+
     public void StopVideo()
     {
         if (_isGameEnded)

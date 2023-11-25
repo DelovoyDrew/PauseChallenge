@@ -9,6 +9,6 @@ public class VideoTimer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _timer.text = _video.time.ToString("0.00") + "s";
+        _timer.text = _video.time.ToString("0.00");
     }
 }
