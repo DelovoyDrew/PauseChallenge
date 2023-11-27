@@ -19,7 +19,6 @@ public class GlobalSaver : MonoBehaviour
 
     [SerializeField] private bool IsClear;
 
-
     private void Awake()
     {
         if (Instance == null)
