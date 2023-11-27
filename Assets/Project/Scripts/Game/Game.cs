@@ -11,6 +11,7 @@ public class Game : MonoBehaviour
     [SerializeField] private GamePanelUI _gamePanel;
 
     [SerializeField] private float _looseDelay;
+    [SerializeField] private float _winDelay;
 
     private void Start()
     {
@@ -47,9 +48,16 @@ public class Game : MonoBehaviour
         }
         else
         {
-            _winPanel.gameObject.SetActive(true);
-            _gamePanel.gameObject.SetActive(false);
+            StartCoroutine(WinRoutine());   
         }
+    }
+
+    private IEnumerator WinRoutine()
+    {
+        yield return new WaitForSeconds(_winDelay);
+        _winPanel.gameObject.SetActive(true);
+        _gamePanel.gameObject.SetActive(false);
+        VideoStopper.Instance.PauseVideo();
     }
 
     private IEnumerator LooseRoutine()
@@ -57,5 +65,6 @@ public class Game : MonoBehaviour
         yield return new WaitForSeconds(_looseDelay);
         _loosePanel.gameObject.SetActive(true);
         _gamePanel.gameObject.SetActive(false);
+        VideoStopper.Instance.PauseVideo();
     }
 }

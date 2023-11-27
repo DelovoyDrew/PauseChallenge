@@ -21,7 +21,7 @@ public class MenuLvl : MonoBehaviour
 
     public void OpenForAd()
     {
-        var globalLvlSave = GlobalSaver.Instance.GameSave.LvlsData.Find(x => x.LvlNumber == Number);
+        var globalLvlSave = GlobalSaver.Instance.GameSave.Data.Find(x => x.LvlNumber == Number);
         globalLvlSave.OpenLvl();
         _visual.Initialize(globalLvlSave.IsOpen, globalLvlSave.DonePercent);
     }

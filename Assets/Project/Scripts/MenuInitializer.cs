@@ -10,7 +10,7 @@ public class MenuInitializer : MonoBehaviour
         var saveData = GlobalSaver.Instance.GameSave;
         foreach (var item in _lvls)
         {
-            var lvlData = saveData.LvlsData.Find(x => x.LvlNumber == item.Number);
+            var lvlData = saveData.Data.Find(x => x.LvlNumber == item.Number);
             item.Initilize(lvlData.IsOpen, lvlData.DonePercent);
         }
     }

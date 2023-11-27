@@ -10,16 +10,16 @@ namespace YG
         public string language = "ru";
         public bool promptDone;
 
-        public LvlsConfig config;
+        public LvlsData data;
 
         public SavesYG()
         {
-            config = null;
+            data = null;
         }
 
-        public SavesYG(LvlsConfig config)
+        public SavesYG(LvlsData data)
         {
-          this.config = config;
+          this.data = data;
         }
     }
 }
