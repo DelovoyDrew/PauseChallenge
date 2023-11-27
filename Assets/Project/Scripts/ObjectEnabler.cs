@@ -4,15 +4,9 @@ using UnityEngine.Events;
 public class ObjectEnabler : MonoBehaviour
 {
     public UnityEvent OnEnableEvent;
-    public UnityEvent OnDisableEvent;
 
-    private void OnEnable()
+    public void StartEvent()
     {
         OnEnableEvent?.Invoke();
-    }
-
-    private void OnDisable()
-    {
-        OnDisableEvent?.Invoke();
-    }
+    }    
 }

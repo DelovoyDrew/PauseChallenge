@@ -3,7 +3,7 @@ using UnityEngine;
 public class FpsController : MonoBehaviour
 {
     public static FpsController Instance { get; private set; }
-
+    [SerializeField] private bool _isShowFPS;
     private float count;
 
     private void Awake()
@@ -25,6 +25,9 @@ public class FpsController : MonoBehaviour
 
     private void Update()
     {
+        if (!_isShowFPS)
+            return;
+
         float current = 0;
         current = Time.frameCount / Time.time;
         count = (int)current;
@@ -32,6 +35,9 @@ public class FpsController : MonoBehaviour
 
     private void OnGUI()
     {
+        if (!_isShowFPS)
+            return;
+
         Rect location = new Rect(5, 5, 255, 75);
         string text = $"FPS: {Mathf.Round(count)}";
         Texture black = Texture2D.linearGrayTexture;

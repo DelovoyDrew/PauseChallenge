@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class Game : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Game : MonoBehaviour
 
     public void RestartGame()
     {
+        YandexGame.FullscreenShow();
         _mistakes.ResetMistakes();
 
         _loosePanel.gameObject.SetActive(false);
@@ -32,6 +34,7 @@ public class Game : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        YandexGame.FullscreenShow();
         SceneManager.LoadScene(Scenes.MENU);
     }
 

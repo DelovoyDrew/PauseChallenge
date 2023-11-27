@@ -11,7 +11,7 @@ public class MenuInitializer : MonoBehaviour
         foreach (var item in _lvls)
         {
             var lvlData = saveData.Data.Find(x => x.LvlNumber == item.Number);
-            item.Initilize(lvlData.IsOpen, lvlData.DonePercent);
+            item.Initilize(lvlData.IsOpen, lvlData.DonePercent, lvlData.Tries);
         }
     }
 

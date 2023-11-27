@@ -14,6 +14,7 @@ public class VideoStopper : MonoBehaviour
 
     [SerializeField] private VideoPlayer _videoPlayer;
     [SerializeField] private VideoConfig _currentConfig;
+    [SerializeField] private PausePanel _pausePanel;
 
     private float _mostFarDistance;
     private bool _isGameEnded;
@@ -62,6 +63,7 @@ public class VideoStopper : MonoBehaviour
         _videoPlayer.Stop();
         _videoPlayer.Play();
         _isGameEnded = false;
+        _pausePanel.Open(false);
 
         OnTry?.Invoke();
     }
@@ -69,6 +71,11 @@ public class VideoStopper : MonoBehaviour
     public void PauseVideo()
     {
         _videoPlayer.Pause();
+    }
+
+    public void OpenPausePanel()
+    {
+        _pausePanel.Open(true);
     }
 
     public void StopVideo()
@@ -79,9 +86,11 @@ public class VideoStopper : MonoBehaviour
         if (_videoPlayer.isPlaying)
         {
             OnPause?.Invoke(FindPercent());
+
         }
         else
         {
+            _pausePanel.Open(false);
             _videoPlayer.Play();
         }
 
