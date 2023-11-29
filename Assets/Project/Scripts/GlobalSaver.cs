@@ -10,12 +10,12 @@ public class GlobalSaver : MonoBehaviour
     public LvlsData GameSave { get; private set; }
     public LvlData CurrentLvlData => GameSave.Data[CurrentLvl];
     public int CurrentLvl { get; private set; }
-    public VideoConfig VideoLvl => _lvls[CurrentLvl];
+    public LvlConfig VideoLvl => _lvls[CurrentLvl];
 
     [SerializeField] private float _autoSaveDelay;
 
     [SerializeField] private LvlsConfig _startLvlData;
-    [SerializeField] private List<VideoConfig> _lvls;
+    [SerializeField] private List<LvlConfig> _lvls;
 
     [SerializeField] private bool IsClear;
 

@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.Video;
 
 public class VideoStopper : MonoBehaviour
 {
@@ -12,8 +11,8 @@ public class VideoStopper : MonoBehaviour
     public Action<float> OnPause;
     public Action OnTry;
 
-    [SerializeField] private VideoPlayer _videoPlayer;
-    [SerializeField] private VideoConfig _currentConfig;
+    [SerializeField] private LvlPlayer _lvlPlayer;
+    [SerializeField] private LvlConfig _currentConfig;
     [SerializeField] private PausePanel _pausePanel;
 
     private float _mostFarDistance;
@@ -25,7 +24,7 @@ public class VideoStopper : MonoBehaviour
             Instance = this;
 
         OnPause += (float value) => {
-            _videoPlayer.Pause();
+            _lvlPlayer.Pause();
         };
 
         OnWin += () => {
@@ -40,28 +39,44 @@ public class VideoStopper : MonoBehaviour
         StartCoroutine(Initialize(GlobalSaver.Instance.VideoLvl));
     }
 
-    public IEnumerator Initialize(VideoConfig config)
+    public IEnumerator Initialize(LvlConfig config)
     {
         _currentConfig = config;
+
+        if (config.Path != null)
+            yield return StartCoroutine(InitializeAsVideoLvl());
+        else if (config.LvlTemplate != null)
+            InitializeAsAnimationLvl();
+
+        StartCoroutine(FindMostFarDistance());
+    }
+
+    private IEnumerator InitializeAsVideoLvl()
+    {
         string path = _currentConfig.Path;
 
         using (UnityWebRequest www = UnityWebRequest.Get(path))
         {
             yield return www.SendWebRequest();
             Debug.Log(www.url);
-            _videoPlayer.url = www.url;
-            _videoPlayer.Prepare();
-            _videoPlayer.Play();
+            _lvlPlayer.url = www.url;
+            _lvlPlayer.Prepare();
+            _lvlPlayer.Play();
             OnTry?.Invoke();
         }
+    }
 
-        StartCoroutine(FindMostFarDistance());
+    private void InitializeAsAnimationLvl()
+    {
+        //_lvlPlayer = Instantiate(_currentConfig.LvlTemplate, Vector3.zero, Quaternion.identity, this.gameObject);
+        _lvlPlayer.Play();
+        OnTry?.Invoke();
     }
 
     public void RestartVideo()
     {
-        _videoPlayer.Stop();
-        _videoPlayer.Play();
+        _lvlPlayer.Stop();
+        _lvlPlayer.Play();
         _isGameEnded = false;
         _pausePanel.Open(false);
 
@@ -70,12 +85,12 @@ public class VideoStopper : MonoBehaviour
 
     public void EndGamePauseVideo()
     {
-        _videoPlayer.Pause();
+        _lvlPlayer.Pause();
     }
 
     public void OpenPausePanel()
     {
-        if(_videoPlayer.isPlaying)
+        if(_lvlPlayer.isPlaying)
             _pausePanel.Open(false);
         else
             _pausePanel.Open(true);
@@ -87,7 +102,7 @@ public class VideoStopper : MonoBehaviour
             return;
 
 
-        if (_videoPlayer.isPlaying)
+        if (_lvlPlayer.isPlaying)
         {
             OnPause?.Invoke(FindPercent());
 
@@ -95,14 +110,14 @@ public class VideoStopper : MonoBehaviour
         else
         {
             _pausePanel.Open(false);
-            _videoPlayer.Play();
+            _lvlPlayer.Play();
         }
 
     }
 
     private float FindPercent()
     {
-        var time = _videoPlayer.time;
+        var time = _lvlPlayer.time;
         var percent = FindClosePercent();
 
         foreach (var item in _currentConfig.WinTime)
@@ -120,7 +135,7 @@ public class VideoStopper : MonoBehaviour
     private float FindClosePercent()
     {
         float distance = float.MaxValue;
-        var stopTime = _videoPlayer.time;
+        var stopTime = _lvlPlayer.time;
 
         foreach (var item in _currentConfig.WinTime)
         {
@@ -150,7 +165,7 @@ public class VideoStopper : MonoBehaviour
 
     private IEnumerator FindMostFarDistance()
     {
-        yield return new WaitUntil(() => _videoPlayer.isPrepared);
+        yield return new WaitUntil(() => _lvlPlayer.isPrepared);
 
         float distance = float.MinValue;
         float prevValue = 0;
@@ -163,7 +178,7 @@ public class VideoStopper : MonoBehaviour
                 distance = currDistance;
         }
 
-        var newcurrDistance = Mathf.Abs((float)_videoPlayer.length - prevValue);
+        var newcurrDistance = Mathf.Abs((float)_lvlPlayer.length - prevValue);
         if (distance < newcurrDistance)
             distance = newcurrDistance;
 

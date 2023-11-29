@@ -1,5 +1,5 @@
 {
-    "idSave": 25,
+    "idSave": 39,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
@@ -9,7 +9,7 @@
                 "<LvlNumber>k__BackingField": 0,
                 "IsOpen": true,
                 "DonePercent": 100.0,
-                "Tries": 29
+                "Tries": 42
             },
             {
                 "<LvlNumber>k__BackingField": 1,

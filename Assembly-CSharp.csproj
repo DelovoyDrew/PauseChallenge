@@ -80,7 +80,6 @@
     <Compile Include="Assets\Effects\Q Vignette\Demos\DemoStuff\DemoScripts\Q_Rotator.cs" />
     <Compile Include="Assets\Effects\Q Vignette\Scripts\Q_Vignette_Single.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\LangYGAdditionalText.cs" />
-    <Compile Include="Assets\Project\Scripts\VideoConfig.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LBPlayerDataYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\YandexMetrica.cs" />
     <Compile Include="Assets\Project\Scripts\Game\VideoTimer.cs" />
@@ -118,6 +117,9 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\ViewingAdsYG.cs" />
     <Compile Include="Assets\Project\Scripts\LvlsConfig.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LeaderboardYG.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\AnimationLvl.cs" />
+    <Compile Include="Assets\Project\Scripts\LvlConfig.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\LvlPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UIAssets\Mega Hyper Casual GUI Pack\Font\OFL.txt" />
