@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c3e6ff21ca8b5438d6e51282f02a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _videoPlayer: {fileID: 1116449660}
+  _lvlPlayer: {fileID: 0}
   _currentConfig: {fileID: 11400000, guid: 928d0a79dc006c140834ae0f06fbefd3, type: 2}
   _pausePanel: {fileID: 1586709132}
 --- !u!4 &1115815620
@@ -1786,7 +1786,7 @@ VideoPlayer:
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
+  m_SkipOnDrop: 0
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
@@ -2376,7 +2376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timer: {fileID: 1851880130}
-  _video: {fileID: 1116449660}
+  _player: {fileID: 0}
 --- !u!1 &1401959081
 GameObject:
   m_ObjectHideFlags: 0
