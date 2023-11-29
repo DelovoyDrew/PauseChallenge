@@ -34,7 +34,7 @@ public class GlobalSaver : MonoBehaviour
         if (IsClear == true)
             RemoveSaves();
 
-        GetSave();
+        StartCoroutine(GetSave());
         StartCoroutine(SaveRoutine());
     }
 
@@ -55,8 +55,10 @@ public class GlobalSaver : MonoBehaviour
         YandexGame.SaveProgress();
     }
 
-    private void GetSave()
+    private IEnumerator GetSave()
     {
+        yield return new WaitUntil(() => YandexGame.SDKEnabled);
+        YandexGame.FullscreenShow();
         YandexGame.LoadProgress();
         var data = YandexGame.savesData;
         GameSave = data.data;

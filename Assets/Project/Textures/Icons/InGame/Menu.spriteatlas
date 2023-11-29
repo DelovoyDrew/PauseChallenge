@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Menu
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 5da9c1d7031df5345b11dbed9c1e682f, type: 3}
+    - {fileID: 2800000, guid: ab744964f30a38e4baaca05e20b5786e, type: 3}
+    - {fileID: 2800000, guid: 15ed1dc4e2c92ef4bbc566d955dd6234, type: 3}
+    - {fileID: 2800000, guid: 93df1ccfa09bfa5438472b4a31e2a89a, type: 3}
+    - {fileID: 2800000, guid: 5901498ab21dd0b47b1b5e999640e7a3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ab744964f30a38e4baaca05e20b5786e, type: 3}
+  - {fileID: 21300000, guid: 15ed1dc4e2c92ef4bbc566d955dd6234, type: 3}
+  - {fileID: 21300000, guid: 5da9c1d7031df5345b11dbed9c1e682f, type: 3}
+  - {fileID: 21300000, guid: 5901498ab21dd0b47b1b5e999640e7a3, type: 3}
+  - {fileID: 21300000, guid: 93df1ccfa09bfa5438472b4a31e2a89a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - End Game Pink
+  - Background Shadow Orange
+  - End Game Orange
+  - star
+  - Ad Shadow Orange
+  m_RenderDataMap: {}
+  m_Tag: Menu
+  m_IsVariant: 0

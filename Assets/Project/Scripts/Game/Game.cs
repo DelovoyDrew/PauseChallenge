@@ -60,7 +60,7 @@ public class Game : MonoBehaviour
         yield return new WaitForSeconds(_winDelay);
         _winPanel.gameObject.SetActive(true);
         _gamePanel.gameObject.SetActive(false);
-        VideoStopper.Instance.PauseVideo();
+        VideoStopper.Instance.EndGamePauseVideo();
     }
 
     private IEnumerator LooseRoutine()
@@ -68,6 +68,6 @@ public class Game : MonoBehaviour
         yield return new WaitForSeconds(_looseDelay);
         _loosePanel.gameObject.SetActive(true);
         _gamePanel.gameObject.SetActive(false);
-        VideoStopper.Instance.PauseVideo();
+        VideoStopper.Instance.EndGamePauseVideo();
     }
 }

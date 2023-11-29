@@ -19,7 +19,7 @@ namespace YG
 
         public SavesYG(LvlsData data)
         {
-          this.data = data;
+            this.data = data;
         }
     }
 }

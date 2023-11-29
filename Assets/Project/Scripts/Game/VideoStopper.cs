@@ -68,20 +68,24 @@ public class VideoStopper : MonoBehaviour
         OnTry?.Invoke();
     }
 
-    public void PauseVideo()
+    public void EndGamePauseVideo()
     {
         _videoPlayer.Pause();
     }
 
     public void OpenPausePanel()
     {
-        _pausePanel.Open(true);
+        if(_videoPlayer.isPlaying)
+            _pausePanel.Open(false);
+        else
+            _pausePanel.Open(true);
     }
 
     public void StopVideo()
     {
         if (_isGameEnded)
             return;
+
 
         if (_videoPlayer.isPlaying)
         {

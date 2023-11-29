@@ -414,8 +414,8 @@ PlayerSettings:
     BANNER_STATIC_2: 
     BAR_COLOR: 
     SET_1_TO_DISABLE_FIXEDSCREEN_ON_DESKTOP: 
-    SET_1_TO_DISABLE_FIXEDSCREEN_ON_MOBILE: 
-    SET_1_TO_DISABLE_SHADOWS: 
+    SET_1_TO_DISABLE_FIXEDSCREEN_ON_MOBILE: 1
+    SET_1_TO_DISABLE_SHADOWS: 1
     WORKER_FILENAME: 
   mobileMTRendering:
     Android: 1
@@ -669,7 +669,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: PROJECT:ChikasYG1.5
+  webGLTemplate: PROJECT:PluginYG
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0
