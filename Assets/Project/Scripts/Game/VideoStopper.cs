@@ -7,6 +7,8 @@ public class VideoStopper : MonoBehaviour
 {
     public static VideoStopper Instance { get; private set; }
 
+    public float showTime=>_lvlPlayer.showTime;
+
     public Action OnWin;
     public Action<float> OnPause;
     public Action OnTry;
@@ -14,6 +16,8 @@ public class VideoStopper : MonoBehaviour
     [SerializeField] private LvlPlayer _lvlPlayer;
     [SerializeField] private LvlConfig _currentConfig;
     [SerializeField] private PausePanel _pausePanel;
+
+    [SerializeField] private Transform _lvlParent;
 
     private float _mostFarDistance;
     private bool _isGameEnded;
@@ -42,11 +46,11 @@ public class VideoStopper : MonoBehaviour
     public IEnumerator Initialize(LvlConfig config)
     {
         _currentConfig = config;
-
-        if (config.Path != null)
+        
+        if (config.LvlTemplate != null)
+            yield return StartCoroutine(InitializeAsAnimationLvl());
+        else if (config.Path != null)
             yield return StartCoroutine(InitializeAsVideoLvl());
-        else if (config.LvlTemplate != null)
-            InitializeAsAnimationLvl();
 
         StartCoroutine(FindMostFarDistance());
     }
@@ -66,11 +70,13 @@ public class VideoStopper : MonoBehaviour
         }
     }
 
-    private void InitializeAsAnimationLvl()
+    private IEnumerator InitializeAsAnimationLvl()
     {
-        //_lvlPlayer = Instantiate(_currentConfig.LvlTemplate, Vector3.zero, Quaternion.identity, this.gameObject);
+        _lvlPlayer = Instantiate(_currentConfig.LvlTemplate, Vector3.zero, Quaternion.identity).GetComponent<LvlPlayer>();
+        _lvlPlayer.transform.SetParent(_lvlParent);
         _lvlPlayer.Play();
         OnTry?.Invoke();
+        yield break;
     }
 
     public void RestartVideo()

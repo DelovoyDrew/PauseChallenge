@@ -59,6 +59,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\CustomRBT\BannerYG.cs" />
     <Compile Include="Assets\Project\Scripts\Game\GamePanelUI.cs" />
     <Compile Include="Assets\Project\Scripts\MenuVisuals.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\LvlPlayer.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\InfoYG\InfoYG.cs" />
     <Compile Include="Assets\Project\Scripts\Game\ResultShower.cs" />
     <Compile Include="Assets\Project\Scripts\ObjectEnabler.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Storage\Storage_yg.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\ConfigYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\Lang_yg.cs" />
+    <Compile Include="Assets\Project\Scripts\LvlConfig.cs" />
     <Compile Include="Assets\Project\Scripts\SceneTransfer.cs" />
     <Compile Include="Assets\Project\Scripts\GlobalSaver.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\ConditionallyVisiblePropertyDrawer\Runtime\ConditionallyVisibleAttribute.cs" />
@@ -108,6 +110,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\CallingAnEvent.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ForVisualScriptYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PaymentsCatalogYG.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\AnimationLvl.cs" />
     <Compile Include="Assets\Project\Scripts\Game\PausePanel.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ImageLoadYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Authorization\Auth_yg.cs" />
@@ -117,9 +120,8 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\ViewingAdsYG.cs" />
     <Compile Include="Assets\Project\Scripts\LvlsConfig.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LeaderboardYG.cs" />
-    <Compile Include="Assets\Project\Scripts\Game\AnimationLvl.cs" />
-    <Compile Include="Assets\Project\Scripts\LvlConfig.cs" />
-    <Compile Include="Assets\Project\Scripts\Game\LvlPlayer.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\AnimationLvlPlayer.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\VideoLvlPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UIAssets\Mega Hyper Casual GUI Pack\Font\OFL.txt" />
