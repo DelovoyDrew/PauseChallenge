@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class AnimationLvlPlayer : LvlPlayer
@@ -6,17 +7,18 @@ public class AnimationLvlPlayer : LvlPlayer
     [SerializeField] private AudioSource _audio;
 
     public override bool isPlaying => _isPlaying;
-    public override float length => _state.length;
-    public override float time => _state.normalizedTime * length;
+    public override float length => _length;
+    public override float time => (_state.normalizedTime * length) % length;
     public override float showTime => _audio.time;
 
     private bool _isPlaying;
+    private float _length;
 
-    private AnimatorStateInfo _state;
+    private AnimatorStateInfo _state => _animator.GetCurrentAnimatorStateInfo(0);
 
     private void Awake()
     {
-        _state = _animator.GetCurrentAnimatorStateInfo(0);
+        _length = _animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
     }
 
     public override void Play()

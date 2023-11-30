@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   LvlTemplate: {fileID: 3683891200277356511, guid: d53ad7d030426b74d87bdab81355fb4c, type: 3}
+  FramesCount: 285
   <WinTime>k__BackingField:
   - {x: 0, y: 0}
   - {x: 69, y: 75}

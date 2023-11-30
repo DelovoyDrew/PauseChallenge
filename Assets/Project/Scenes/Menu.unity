@@ -2841,7 +2841,7 @@ MonoBehaviour:
   _autoSaveDelay: 10
   _startLvlData: {fileID: 11400000, guid: 50d108b9045b5104a8a767d9a9c0344d, type: 2}
   _lvls:
-  - {fileID: 11400000, guid: 928d0a79dc006c140834ae0f06fbefd3, type: 2}
+  - {fileID: 11400000, guid: 067d8bb240f286b4cbe922c055a75fe7, type: 2}
   IsClear: 0
 --- !u!1 &1458813678
 GameObject:

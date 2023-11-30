@@ -5,6 +5,8 @@ using UnityEngine;
 public class LvlConfig : ScriptableObject
 {
     public LvlPlayer LvlTemplate;
+    public int FramesCount;
+
     public string Path => System.IO.Path.Combine(Application.streamingAssetsPath, _fileName);
 
     [field: SerializeField] public List<Vector2> WinTime { get; private set; }

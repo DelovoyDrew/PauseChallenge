@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -21,6 +22,8 @@ public class VideoStopper : MonoBehaviour
 
     private float _mostFarDistance;
     private bool _isGameEnded;
+
+    private List<Vector2> WinTime = new List<Vector2>();
 
     private void Awake()
     {
@@ -52,7 +55,7 @@ public class VideoStopper : MonoBehaviour
         else if (config.Path != null)
             yield return StartCoroutine(InitializeAsVideoLvl());
 
-        StartCoroutine(FindMostFarDistance());
+        yield return StartCoroutine(FindMostFarDistance());
     }
 
     private IEnumerator InitializeAsVideoLvl()
@@ -63,6 +66,7 @@ public class VideoStopper : MonoBehaviour
         {
             yield return www.SendWebRequest();
             Debug.Log(www.url);
+            WinTime = _currentConfig.WinTime;
             _lvlPlayer.url = www.url;
             _lvlPlayer.Prepare();
             _lvlPlayer.Play();
@@ -75,8 +79,18 @@ public class VideoStopper : MonoBehaviour
         _lvlPlayer = Instantiate(_currentConfig.LvlTemplate, Vector3.zero, Quaternion.identity).GetComponent<LvlPlayer>();
         _lvlPlayer.transform.SetParent(_lvlParent);
         _lvlPlayer.Play();
+        yield return new WaitUntil(() => _lvlPlayer.isActiveAndEnabled);
+        RecalculateWinTimeForAnimation();
         OnTry?.Invoke();
-        yield break;
+    }
+
+    private void RecalculateWinTimeForAnimation()
+    {
+        foreach (var winTime in _currentConfig.WinTime)
+        {
+            var recalculated = winTime * _lvlPlayer.length / _currentConfig.FramesCount;
+            WinTime.Add(recalculated);
+        }
     }
 
     public void RestartVideo()
@@ -126,7 +140,7 @@ public class VideoStopper : MonoBehaviour
         var time = _lvlPlayer.time;
         var percent = FindClosePercent();
 
-        foreach (var item in _currentConfig.WinTime)
+        foreach (var item in WinTime)
         {
             if (time >= item.x && time <= item.y)
             {
@@ -143,7 +157,7 @@ public class VideoStopper : MonoBehaviour
         float distance = float.MaxValue;
         var stopTime = _lvlPlayer.time;
 
-        foreach (var item in _currentConfig.WinTime)
+        foreach (var item in WinTime)
         {
             if(stopTime < item.x)
             {
@@ -164,19 +178,19 @@ public class VideoStopper : MonoBehaviour
             
         }
 
-        //Debug.Log($"Most Far: {_mostFarDistance}, Distance: {distance}, Player Length: {_videoPlayer.length}");
+        //Debug.Log($"Most Far: {_mostFarDistance}, Distance: {distance}, Player Length: {_lvlPlayer.length}");
 
         return (_mostFarDistance - distance) / _mostFarDistance * 100;
     }
 
     private IEnumerator FindMostFarDistance()
     {
-        yield return new WaitUntil(() => _lvlPlayer.isPrepared);
+        yield return new WaitUntil(() => _lvlPlayer.isActiveAndEnabled);
 
         float distance = float.MinValue;
         float prevValue = 0;
 
-        foreach (var item in _currentConfig.WinTime)
+        foreach (var item in WinTime)
         {
             var currDistance = Mathf.Abs(item.x - prevValue);
             prevValue = item.y;

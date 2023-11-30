@@ -69,6 +69,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\ConfigYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\Lang_yg.cs" />
     <Compile Include="Assets\Project\Scripts\LvlConfig.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\VideoLvlPlayer.cs" />
     <Compile Include="Assets\Project\Scripts\SceneTransfer.cs" />
     <Compile Include="Assets\Project\Scripts\GlobalSaver.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\ConditionallyVisiblePropertyDrawer\Runtime\ConditionallyVisibleAttribute.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\GameReadyAPI\GRA_yg.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GraphicSettingsYG.cs" />
     <Compile Include="Assets\YandexGame\WorkingData\SavesYG.cs" />
+    <Compile Include="Assets\Project\Scripts\Game\AnimationLvlPlayer.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\UtilsPayments.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\UtilsLB.cs" />
     <Compile Include="Assets\Effects\Q Vignette\Scripts\Q_Vignette_Base.cs" />
@@ -120,8 +122,6 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\ViewingAdsYG.cs" />
     <Compile Include="Assets\Project\Scripts\LvlsConfig.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboard\LeaderboardYG.cs" />
-    <Compile Include="Assets\Project\Scripts\Game\AnimationLvlPlayer.cs" />
-    <Compile Include="Assets\Project\Scripts\Game\VideoLvlPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UIAssets\Mega Hyper Casual GUI Pack\Font\OFL.txt" />
