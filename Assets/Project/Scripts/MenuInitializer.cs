@@ -13,7 +13,7 @@ public class MenuInitializer : MonoBehaviour
         foreach (var item in _lvls)
         {
             var lvlData = saveData.Data.Find(x => x.LvlNumber == item.Number);
-            item.Initilize(lvlData.IsOpen, lvlData.DonePercent, lvlData.Tries);
+            item.Initilize(lvlData.IsOpen, lvlData.DonePercent, lvlData.Tries, GlobalSaver.Instance.GetConfigByIndex(lvlData.LvlNumber).Avatar);
         }
     }
 

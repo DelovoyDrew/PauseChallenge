@@ -413,6 +413,16 @@ PlayerSettings:
     BANNER_STATIC_1: 
     BANNER_STATIC_2: 
     BAR_COLOR: 
+    CHANGE_BAR_COLOR: 
+    CHANGE_LOADING_SCREEN_BACKGROUND: 
+    CHANGE_LOGO_IMAGE: 
+    CONFIGURE_SHADOWS: 
+    CONNECT_WEB_AUDIO_PLUGIN_FILES: 
+    CUSTOMIZE_CURSOR: -1
+    DISABLE_CONSOLE_LOG: 1
+    ENABLE_CONSOLE: 
+    LOCK_ASPECT_RATIO_ON_DESKTOP: 
+    LOCK_ASPECT_RATIO_ON_MOBILE: 
     SET_1_TO_DISABLE_FIXEDSCREEN_ON_DESKTOP: 
     SET_1_TO_DISABLE_FIXEDSCREEN_ON_MOBILE: 1
     SET_1_TO_DISABLE_SHADOWS: 1
@@ -669,7 +679,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: PROJECT:PluginYG
+  webGLTemplate: PROJECT:AT_YG1.6
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0

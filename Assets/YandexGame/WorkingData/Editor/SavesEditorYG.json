@@ -1,5 +1,5 @@
 {
-    "idSave": 75,
+    "idSave": 152,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
@@ -9,19 +9,19 @@
                 "<LvlNumber>k__BackingField": 0,
                 "IsOpen": true,
                 "DonePercent": 100.0,
-                "Tries": 65
+                "Tries": 70
             },
             {
                 "<LvlNumber>k__BackingField": 1,
-                "IsOpen": false,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "IsOpen": true,
+                "DonePercent": 100.0,
+                "Tries": 31
             },
             {
                 "<LvlNumber>k__BackingField": 2,
-                "IsOpen": false,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "IsOpen": true,
+                "DonePercent": 100.0,
+                "Tries": 21
             },
             {
                 "<LvlNumber>k__BackingField": 3,
@@ -37,7 +37,7 @@
             },
             {
                 "<LvlNumber>k__BackingField": 5,
-                "IsOpen": false,
+                "IsOpen": true,
                 "DonePercent": 0.0,
                 "Tries": 0
             },
@@ -49,7 +49,7 @@
             },
             {
                 "<LvlNumber>k__BackingField": 7,
-                "IsOpen": false,
+                "IsOpen": true,
                 "DonePercent": 0.0,
                 "Tries": 0
             },
@@ -91,7 +91,7 @@
             },
             {
                 "<LvlNumber>k__BackingField": 14,
-                "IsOpen": false,
+                "IsOpen": true,
                 "DonePercent": 0.0,
                 "Tries": 0
             },

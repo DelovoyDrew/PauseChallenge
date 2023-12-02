@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Avatars
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: a3023c2ae7531fd46862516c98642acd, type: 3}
+    - {fileID: 2800000, guid: 53bbccd9d375ad44d9e1dbcd060c3b48, type: 3}
+    - {fileID: 2800000, guid: 5d010f0021b15ff41844677d025c220c, type: 3}
+    - {fileID: 2800000, guid: f09e416f71ebcbd4a84503be2da41f69, type: 3}
+    - {fileID: 2800000, guid: 8c0aa44464134c142b6fa53b50c7a8ae, type: 3}
+    - {fileID: 2800000, guid: ff510950806fa1b4c996d7332c755cb9, type: 3}
+    - {fileID: 2800000, guid: 37fe156a53ec4d34caa4afeaf4bc7d8a, type: 3}
+    - {fileID: 2800000, guid: 0df60ddb1a7776a4b937376bfe093680, type: 3}
+    - {fileID: 2800000, guid: dde3f904e6a39ac4c8a47594caaaddc6, type: 3}
+    - {fileID: 2800000, guid: 31a16d496b3853341b78a9ca4e1ebbdf, type: 3}
+    - {fileID: 2800000, guid: afd9a97333e8767489229af7683df8e7, type: 3}
+    - {fileID: 2800000, guid: 4a6794bdbdcc5434a9f36a38d598dd2d, type: 3}
+    - {fileID: 2800000, guid: b8ca7e07048e562419159a6a2873f22e, type: 3}
+    - {fileID: 2800000, guid: 0b231942d180bfe44aef95bdfd727cbd, type: 3}
+    - {fileID: 2800000, guid: ed3a1fa7945d31c4ab5a619cb0ebf1cf, type: 3}
+    - {fileID: 2800000, guid: 36dae4094f775014ab19f6207e6226be, type: 3}
+    - {fileID: 2800000, guid: 6049c08027e97a349ad05957f1859838, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 5d010f0021b15ff41844677d025c220c, type: 3}
+  - {fileID: 21300000, guid: ff510950806fa1b4c996d7332c755cb9, type: 3}
+  - {fileID: 21300000, guid: 6049c08027e97a349ad05957f1859838, type: 3}
+  - {fileID: 21300000, guid: 0b231942d180bfe44aef95bdfd727cbd, type: 3}
+  - {fileID: 21300000, guid: afd9a97333e8767489229af7683df8e7, type: 3}
+  - {fileID: 21300000, guid: dde3f904e6a39ac4c8a47594caaaddc6, type: 3}
+  - {fileID: 21300000, guid: 8c0aa44464134c142b6fa53b50c7a8ae, type: 3}
+  - {fileID: 21300000, guid: b8ca7e07048e562419159a6a2873f22e, type: 3}
+  - {fileID: 21300000, guid: ed3a1fa7945d31c4ab5a619cb0ebf1cf, type: 3}
+  - {fileID: 21300000, guid: 36dae4094f775014ab19f6207e6226be, type: 3}
+  - {fileID: 21300000, guid: 31a16d496b3853341b78a9ca4e1ebbdf, type: 3}
+  - {fileID: 21300000, guid: 53bbccd9d375ad44d9e1dbcd060c3b48, type: 3}
+  - {fileID: 21300000, guid: a3023c2ae7531fd46862516c98642acd, type: 3}
+  - {fileID: 21300000, guid: 37fe156a53ec4d34caa4afeaf4bc7d8a, type: 3}
+  - {fileID: 21300000, guid: 0df60ddb1a7776a4b937376bfe093680, type: 3}
+  - {fileID: 21300000, guid: 4a6794bdbdcc5434a9f36a38d598dd2d, type: 3}
+  - {fileID: 21300000, guid: f09e416f71ebcbd4a84503be2da41f69, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ava6
+  - ava9
+  - lvl4ava
+  - ava17
+  - ava14
+  - ava12
+  - ava8
+  - ava16
+  - lvl2screen
+  - lvl3
+  - ava13
+  - ava5
+  - 1ava
+  - ava10
+  - ava11
+  - ava15
+  - ava7
+  m_RenderDataMap: {}
+  m_Tag: Avatars
+  m_IsVariant: 0

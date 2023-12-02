@@ -125,10 +125,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UIAssets\Mega Hyper Casual GUI Pack\Font\OFL.txt" />
+    <None Include="Assets\WebGLTemplates\AT_GP1.2.1\TemplateData\gp-bundle\573.7a938e4902e3eb9831e2.js.LICENSE.txt" />
     <None Include="Assets\Effects\Q Vignette\ReadMe.txt" />
+    <None Include="Assets\WebGLTemplates\AT_GP1.2.1\TemplateData\gp-bundle\690.7a938e4902e3eb9831e2.js.LICENSE.txt" />
     <None Include="Assets\WebGLTemplates\Notices.txt" />
     <None Include="Assets\WebGLTemplates\LICENSE.txt" />
     <None Include="Assets\YandexGame\Readme.txt" />
+    <None Include="Assets\WebGLTemplates\AT_GP1.2.1\TemplateData\gp-bundle\gamepush.js.LICENSE.txt" />
     <None Include="Assets\YandexGame\Fonts\LICENSE.txt" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\Notices.txt" />
     <None Include="Assets\YandexGame\Third-Party Notices.txt" />

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 0fa195b9460769e4d87d3690efd83989, type: 3}
+    - {fileID: 2800000, guid: 72e3845c8e3f31749b4b6610def37ad8, type: 3}
+    - {fileID: 2800000, guid: 70bdb7893796314408667a02cae3a18f, type: 3}
+    - {fileID: 2800000, guid: 6f344e7b25b8a7748a706cbd1b492562, type: 3}
+    - {fileID: 2800000, guid: d66b41268fa9f19498d31f28b4bf7b44, type: 3}
+    - {fileID: 2800000, guid: 8a2b816f8167fe34ca3f6e228a735b70, type: 3}
+    - {fileID: 2800000, guid: c22f9a6bfbedf1943b9e029cc219ca47, type: 3}
+    - {fileID: 2800000, guid: 02bfe88ed5c8b2d4894804877434357e, type: 3}
+    - {fileID: 2800000, guid: 5ca44cbc04ea6a541b2a81fa8938cba3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d66b41268fa9f19498d31f28b4bf7b44, type: 3}
+  - {fileID: 21300000, guid: 70bdb7893796314408667a02cae3a18f, type: 3}
+  - {fileID: 21300000, guid: 0fa195b9460769e4d87d3690efd83989, type: 3}
+  - {fileID: 21300000, guid: c22f9a6bfbedf1943b9e029cc219ca47, type: 3}
+  - {fileID: 21300000, guid: 6f344e7b25b8a7748a706cbd1b492562, type: 3}
+  - {fileID: 21300000, guid: 72e3845c8e3f31749b4b6610def37ad8, type: 3}
+  - {fileID: 21300000, guid: 5ca44cbc04ea6a541b2a81fa8938cba3, type: 3}
+  - {fileID: 21300000, guid: 02bfe88ed5c8b2d4894804877434357e, type: 3}
+  - {fileID: 21300000, guid: 8a2b816f8167fe34ca3f6e228a735b70, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - image-removebg-preview (5)
+  - image-removebg-preview (3)
+  - image-removebg-preview (1)
+  - image-removebg-preview
+  - image-removebg-preview (4)
+  - image-removebg-preview (2)
+  - 96616515979
+  - bg6
+  - image-removebg-preview (6)
+  m_RenderDataMap: {}
+  m_Tag: BlockAtlas
+  m_IsVariant: 0

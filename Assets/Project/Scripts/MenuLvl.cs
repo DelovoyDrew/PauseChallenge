@@ -8,11 +8,15 @@ public class MenuLvl : MonoBehaviour
 
     [SerializeField] private MenuLvlVisuals _visual;
     [SerializeField] private Button _playLvlButton;
+    [SerializeField] private Image _avatar;
 
 
-    public void Initilize(bool isOpen, float progressPercent, int triesCount)
+    public void Initilize(bool isOpen, float progressPercent, int triesCount, Sprite sprite = null)
     {
         _visual.Initialize(isOpen, Number, progressPercent, triesCount);
+
+        if (sprite != null)
+            _avatar.sprite = sprite;
 
         if (isOpen)
             _playLvlButton.onClick.AddListener(() => Menu.Instance.StartLvl(Number));
@@ -35,10 +39,12 @@ public class MenuLvl : MonoBehaviour
         if (id != Number)
             return;
 
-        //YandexGame.RewardVideoEvent -= OpenForAd;
+        YandexGame.RewardVideoEvent -= OpenForAd;
 
         var globalLvlSave = GlobalSaver.Instance.GameSave.Data.Find(x => x.LvlNumber == Number);
         globalLvlSave.OpenLvl();
-        _visual.Initialize(globalLvlSave.IsOpen, Number, globalLvlSave.DonePercent, globalLvlSave.Tries);
+        Initilize(globalLvlSave.IsOpen, globalLvlSave.DonePercent, globalLvlSave.Tries);
+
+        GlobalSaver.Instance.Save();
     }
 }

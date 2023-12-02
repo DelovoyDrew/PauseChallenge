@@ -10,7 +10,7 @@ public class GlobalSaver : MonoBehaviour
     public LvlsData GameSave { get; private set; }
     public LvlData CurrentLvlData => GameSave.Data[CurrentLvl];
     public int CurrentLvl { get; private set; }
-    public LvlConfig VideoLvl => _lvls[CurrentLvl];
+    public LvlConfig VideoLvl => GetConfigByIndex(CurrentLvl);
 
     [SerializeField] private float _autoSaveDelay;
 
@@ -36,6 +36,14 @@ public class GlobalSaver : MonoBehaviour
 
         StartCoroutine(GetSave());
         StartCoroutine(SaveRoutine());
+    }
+
+    public LvlConfig GetConfigByIndex(int index)
+    {
+        if (index < 0 || index >= _lvls.Count)
+            Debug.LogError("Wrong index");
+
+        return _lvls[index];
     }
 
     private void RemoveSaves()

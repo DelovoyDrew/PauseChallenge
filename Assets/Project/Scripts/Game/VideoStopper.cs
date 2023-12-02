@@ -8,7 +8,7 @@ public class VideoStopper : MonoBehaviour
 {
     public static VideoStopper Instance { get; private set; }
 
-    public float showTime=>_lvlPlayer.showTime;
+    public float showTime=>_lvlPlayer.time;
 
     public Action OnWin;
     public Action<float> OnPause;
