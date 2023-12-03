@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b15bb8a3bd4fc4cb54a57854be76c0, type: 3}
+  m_Name: Memes
+  m_EditorClassIdentifier: 
+  LvlTemplate: {fileID: 3683891200277356511, guid: 2319a6c03da8ce94b9b8ea3f7325cc9e, type: 3}
+  FramesCount: 120
+  <Avatar>k__BackingField: {fileID: 21300000, guid: 6528ad227e7f5cc49be27ba101120c5e, type: 3}
+  <WinTime>k__BackingField:
+  - {x: 90, y: 91}
+  _fileName: 

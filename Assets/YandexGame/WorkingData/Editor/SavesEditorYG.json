@@ -1,5 +1,5 @@
 {
-    "idSave": 195,
+    "idSave": 235,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
@@ -33,7 +33,7 @@
                 "<LvlNumber>k__BackingField": 4,
                 "IsOpen": true,
                 "DonePercent": 100.0,
-                "Tries": 11
+                "Tries": 12
             },
             {
                 "<LvlNumber>k__BackingField": 5,
@@ -45,7 +45,7 @@
                 "<LvlNumber>k__BackingField": 6,
                 "IsOpen": true,
                 "DonePercent": 100.0,
-                "Tries": 14
+                "Tries": 15
             },
             {
                 "<LvlNumber>k__BackingField": 7,
@@ -57,37 +57,37 @@
                 "<LvlNumber>k__BackingField": 8,
                 "IsOpen": true,
                 "DonePercent": 100.0,
-                "Tries": 5
+                "Tries": 6
             },
             {
                 "<LvlNumber>k__BackingField": 9,
-                "IsOpen": false,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "IsOpen": true,
+                "DonePercent": 97.3786849975586,
+                "Tries": 5
             },
             {
                 "<LvlNumber>k__BackingField": 10,
-                "IsOpen": false,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "IsOpen": true,
+                "DonePercent": 74.43555450439453,
+                "Tries": 3
             },
             {
                 "<LvlNumber>k__BackingField": 11,
-                "IsOpen": false,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "IsOpen": true,
+                "DonePercent": 98.13350677490235,
+                "Tries": 9
             },
             {
                 "<LvlNumber>k__BackingField": 12,
-                "IsOpen": false,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "IsOpen": true,
+                "DonePercent": 99.50206756591797,
+                "Tries": 7
             },
             {
                 "<LvlNumber>k__BackingField": 13,
-                "IsOpen": false,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "IsOpen": true,
+                "DonePercent": 100.0,
+                "Tries": 11
             },
             {
                 "<LvlNumber>k__BackingField": 14,
