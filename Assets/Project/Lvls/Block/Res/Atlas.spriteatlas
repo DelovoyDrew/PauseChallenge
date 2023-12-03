@@ -78,5 +78,5 @@ SpriteAtlas:
   - bg6
   - image-removebg-preview (6)
   m_RenderDataMap: {}
-  m_Tag: BlockAtlas
+  m_Tag: Atlas
   m_IsVariant: 0

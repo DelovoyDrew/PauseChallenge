@@ -69,5 +69,5 @@ SpriteAtlas:
   - image__3_-removebg-preview
   - image__2_-removebg-preview
   m_RenderDataMap: {}
-  m_Tag: Zombie
+  m_Tag: Atlas
   m_IsVariant: 0

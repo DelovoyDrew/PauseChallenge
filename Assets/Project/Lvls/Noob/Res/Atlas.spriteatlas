@@ -57,5 +57,5 @@ SpriteAtlas:
   - lvl1
   - Layer 2
   m_RenderDataMap: {}
-  m_Tag: NoobLvlAtlas
+  m_Tag: Atlas
   m_IsVariant: 0

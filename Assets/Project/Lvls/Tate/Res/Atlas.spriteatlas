@@ -57,5 +57,5 @@ SpriteAtlas:
   - bg10
   - tate
   m_RenderDataMap: {}
-  m_Tag: CircusAtlas
+  m_Tag: Atlas
   m_IsVariant: 0

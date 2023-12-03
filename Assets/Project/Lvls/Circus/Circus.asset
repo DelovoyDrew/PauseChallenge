@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5b15bb8a3bd4fc4cb54a57854be76c0, type: 3}
-  m_Name: 1
+  m_Name: Circus
   m_EditorClassIdentifier: 
-  LvlTemplate: {fileID: 3683891200277356511, guid: 7bd89fa2af20ca7478c83659338f24f2, type: 3}
-  FramesCount: 365
-  <Avatar>k__BackingField: {fileID: 21300000, guid: fe581fbfc2636704e9d1f16513c5594a, type: 3}
+  LvlTemplate: {fileID: 3683891200277356511, guid: 3872603f232d86d4a98aa126d1232716, type: 3}
+  FramesCount: 41
+  <Avatar>k__BackingField: {fileID: 21300000, guid: 6528ad227e7f5cc49be27ba101120c5e, type: 3}
   <WinTime>k__BackingField:
-  - {x: 0, y: 0}
-  - {x: 60, y: 62}
-  - {x: 239, y: 242}
-  - {x: 364, y: 365}
+  - {x: 20, y: 20}
   _fileName: 

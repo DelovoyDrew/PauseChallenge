@@ -66,5 +66,5 @@ SpriteAtlas:
   - image-removebg-preview
   - image__1_-removebg-preview
   m_RenderDataMap: {}
-  m_Tag: CarsAtlas
+  m_Tag: Atlas
   m_IsVariant: 0

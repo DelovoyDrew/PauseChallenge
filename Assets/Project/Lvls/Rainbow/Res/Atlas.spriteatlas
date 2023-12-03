@@ -66,5 +66,5 @@ SpriteAtlas:
   - bg8
   - Layer 5
   m_RenderDataMap: {}
-  m_Tag: CircusAtlas
+  m_Tag: Atlas
   m_IsVariant: 0

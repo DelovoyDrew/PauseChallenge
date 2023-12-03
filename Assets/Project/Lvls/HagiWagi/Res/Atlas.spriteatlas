@@ -60,5 +60,5 @@ SpriteAtlas:
   - image-removebg-preview (1)
   - image-removebg-preview
   m_RenderDataMap: {}
-  m_Tag: CircusAtlas
+  m_Tag: Atlas
   m_IsVariant: 0

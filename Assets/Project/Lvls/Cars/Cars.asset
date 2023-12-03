@@ -10,15 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5b15bb8a3bd4fc4cb54a57854be76c0, type: 3}
-  m_Name: 0
+  m_Name: Cars
   m_EditorClassIdentifier: 
-  LvlTemplate: {fileID: 3683891200277356511, guid: d53ad7d030426b74d87bdab81355fb4c, type: 3}
-  FramesCount: 285
+  LvlTemplate: {fileID: 3683891200277356511, guid: 81396308aafd2214599406c2bdbf4dd6, type: 3}
+  FramesCount: 61
   <Avatar>k__BackingField: {fileID: 21300000, guid: 6528ad227e7f5cc49be27ba101120c5e, type: 3}
   <WinTime>k__BackingField:
-  - {x: 0, y: 0}
-  - {x: 69, y: 75}
-  - {x: 139, y: 145}
-  - {x: 209, y: 215}
-  - {x: 279, y: 285}
+  - {x: 33, y: 36}
   _fileName: 

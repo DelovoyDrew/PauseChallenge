@@ -69,5 +69,5 @@ SpriteAtlas:
   - Layer_5-removebg-preview
   - Layer_3-removebg-preview
   m_RenderDataMap: {}
-  m_Tag: CircusAtlas
+  m_Tag: Atlas
   m_IsVariant: 0

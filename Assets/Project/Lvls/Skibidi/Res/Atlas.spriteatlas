@@ -57,5 +57,5 @@ SpriteAtlas:
   - lvl2pers
   - lvl2bg
   m_RenderDataMap: {}
-  m_Tag: SkibidiAtlas
+  m_Tag: Atlas
   m_IsVariant: 0
