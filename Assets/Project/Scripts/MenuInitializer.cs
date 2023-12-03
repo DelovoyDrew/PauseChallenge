@@ -9,6 +9,7 @@ public class MenuInitializer : MonoBehaviour
     private IEnumerator Start()
     {
         yield return new WaitUntil(() => GlobalSaver.Instance.GameSave != null);
+        Debug.Log("Menu Initialied");
         var saveData = GlobalSaver.Instance.GameSave;
         foreach (var item in _lvls)
         {

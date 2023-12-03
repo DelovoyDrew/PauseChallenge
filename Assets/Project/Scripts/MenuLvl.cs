@@ -10,6 +10,13 @@ public class MenuLvl : MonoBehaviour
     [SerializeField] private Button _playLvlButton;
     [SerializeField] private Image _avatar;
 
+    [SerializeField] private Color _openColor = Color.white;
+    [SerializeField] private Color _closedColor;
+
+    private void OnDisable()
+    {
+        YandexGame.RewardVideoEvent -= OpenForAd;
+    }
 
     public void Initilize(bool isOpen, float progressPercent, int triesCount, Sprite sprite = null)
     {
@@ -19,11 +26,18 @@ public class MenuLvl : MonoBehaviour
             _avatar.sprite = sprite;
 
         if (isOpen)
+        {
             _playLvlButton.onClick.AddListener(() => Menu.Instance.StartLvl(Number));
+            _playLvlButton.enabled = true;
+            _avatar.color = _openColor;
+        }
         else
+        {
+            _avatar.color = _closedColor;
             _playLvlButton.enabled = false;
+        }
 
-        if(!isOpen)
+        if (!isOpen)
         {
             YandexGame.RewardVideoEvent += OpenForAd;
         }
@@ -38,8 +52,6 @@ public class MenuLvl : MonoBehaviour
     {
         if (id != Number)
             return;
-
-        YandexGame.RewardVideoEvent -= OpenForAd;
 
         var globalLvlSave = GlobalSaver.Instance.GameSave.Data.Find(x => x.LvlNumber == Number);
         globalLvlSave.OpenLvl();

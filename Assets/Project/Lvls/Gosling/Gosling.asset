@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Gosling
   m_EditorClassIdentifier: 
   LvlTemplate: {fileID: 3683891200277356511, guid: 33b96854006f6744aa1db1d7a929bc26, type: 3}
-  FramesCount: 90
-  <Avatar>k__BackingField: {fileID: 21300000, guid: 6528ad227e7f5cc49be27ba101120c5e, type: 3}
+  FramesCount: 93
+  <Avatar>k__BackingField: {fileID: 21300000, guid: 0b231942d180bfe44aef95bdfd727cbd, type: 3}
   <WinTime>k__BackingField:
-  - {x: 89, y: 90}
+  - {x: 89, y: 91}
   _fileName: 

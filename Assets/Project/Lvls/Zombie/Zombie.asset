@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LvlTemplate: {fileID: 3683891200277356511, guid: 157c1d60584baff49a42ecef7e32eeb6, type: 3}
   FramesCount: 35
-  <Avatar>k__BackingField: {fileID: 21300000, guid: 6ad9e60932b59e74fa0b5b89aba38340, type: 3}
+  <Avatar>k__BackingField: {fileID: 21300000, guid: 36dae4094f775014ab19f6207e6226be, type: 3}
   <WinTime>k__BackingField:
   - {x: 13, y: 16}
   - {x: 32, y: 35}

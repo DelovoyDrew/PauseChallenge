@@ -7,9 +7,9 @@ public class MenuLvlVisuals : MonoBehaviour
     [SerializeField] private Text _triesCount;
     [SerializeField] private Text _lvlNumber;
 
-    [SerializeField] private RectTransform _progressPanel;
-    [SerializeField] private RectTransform _triesPanel;
-    [SerializeField] private RectTransform _lockPanel;
+    [SerializeField] private Transform _progressPanel;
+    [SerializeField] private Transform _triesPanel;
+    [SerializeField] private Transform _lockPanel;
 
 
     public void Initialize(bool isOpen, int lvlNumber, float progress = 0, int triesCount = 0)
@@ -18,9 +18,9 @@ public class MenuLvlVisuals : MonoBehaviour
 
         if(isOpen)
         {
-            _progressPanel.gameObject.SetActive(true);
-            _triesPanel.gameObject.SetActive(true);
-            _lockPanel.gameObject.SetActive(false);
+            _progressPanel?.gameObject?.SetActive(true);
+            _triesPanel?.gameObject?.SetActive(true);
+            _lockPanel?.gameObject?.SetActive(false);
 
             _progressPercent.text = LvlData.RoundPercentToString(progress) + "%";
             _progressPercent.color = MenuVisuals.Instance.ColorByProgressPercent(progress);

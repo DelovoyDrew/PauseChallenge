@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b15bb8a3bd4fc4cb54a57854be76c0, type: 3}
   m_Name: Tate
   m_EditorClassIdentifier: 
-  LvlTemplate: {fileID: 3683891200277356511, guid: 8b4faea16ef2c9c449033c2311dfdb90, type: 3}
+  LvlTemplate: {fileID: 3683891200277356511, guid: 5bd64d8c27a358144920e4a1cdff1353, type: 3}
   FramesCount: 75
-  <Avatar>k__BackingField: {fileID: 21300000, guid: 6528ad227e7f5cc49be27ba101120c5e, type: 3}
+  <Avatar>k__BackingField: {fileID: 21300000, guid: 37fe156a53ec4d34caa4afeaf4bc7d8a, type: 3}
   <WinTime>k__BackingField:
   - {x: 72, y: 72}
   _fileName: 
