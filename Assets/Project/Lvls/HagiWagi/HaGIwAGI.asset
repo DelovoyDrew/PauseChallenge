@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: HaGIwAGI
   m_EditorClassIdentifier: 
   LvlTemplate: {fileID: 3683891200277356511, guid: fa22cb4d470e8bd4b948c9c9b97b321d, type: 3}
-  FramesCount: 41
+  FramesCount: 50
   <Avatar>k__BackingField: {fileID: 21300000, guid: f09e416f71ebcbd4a84503be2da41f69, type: 3}
   <WinTime>k__BackingField:
-  - {x: 20, y: 21}
+  - {x: 29, y: 30}
   _fileName: 

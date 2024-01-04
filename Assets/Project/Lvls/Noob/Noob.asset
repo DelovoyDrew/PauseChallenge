@@ -17,7 +17,7 @@ MonoBehaviour:
   <Avatar>k__BackingField: {fileID: 21300000, guid: a3023c2ae7531fd46862516c98642acd, type: 3}
   <WinTime>k__BackingField:
   - {x: 0, y: 0}
-  - {x: 69, y: 75}
+  - {x: 70, y: 73}
   - {x: 139, y: 145}
   - {x: 209, y: 215}
   - {x: 279, y: 285}

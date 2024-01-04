@@ -118,7 +118,7 @@ public class VideoStopper : MonoBehaviour
 
     public void StopVideo()
     {
-        if (_isGameEnded)
+        if (_isGameEnded || _mostFarDistance == 0)
             return;
 
 
@@ -138,7 +138,6 @@ public class VideoStopper : MonoBehaviour
     private float FindPercent()
     {
         var time = _lvlPlayer.time;
-        var percent = FindClosePercent();
 
         foreach (var item in WinTime)
         {
@@ -148,6 +147,8 @@ public class VideoStopper : MonoBehaviour
                 return 100;
             }
         }
+
+        var percent = FindClosePercent();
 
         return percent;
     }

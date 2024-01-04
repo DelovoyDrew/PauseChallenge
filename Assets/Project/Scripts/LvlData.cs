@@ -34,6 +34,8 @@ public class LvlData
         if (percent >= 100)
             return percent.ToString();
         else
-            return percent.ToString("0");
+        {
+            return percent.ToString("0.00");
+        }
     }
 }

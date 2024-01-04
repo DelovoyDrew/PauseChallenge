@@ -711,9 +711,9 @@
       <Project>{3F06A929-7ED5-25F9-6D41-1681FB4D2289}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{93791AC7-BC51-4AD3-C81D-B44FADB48F38}</Project>
-      <Name>Unity.2D.Animation.Editor</Name>
+    <ProjectReference Include="Unity.Recorder.Editor.csproj">
+      <Project>{A68519AA-B236-2758-9B17-08C98EBB2697}</Project>
+      <Name>Unity.Recorder.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
       <Project>{8C4DEA4A-DAE7-8034-012C-2517D15B370F}</Project>
@@ -726,6 +726,14 @@
     <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
       <Project>{9E287CC8-D6B4-859B-25ED-E0A7B5E411B8}</Project>
       <Name>Unity.2D.PixelPerfect</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Base.csproj">
+      <Project>{A16D97D7-398C-7818-6791-5F7957099811}</Project>
+      <Name>Unity.Recorder.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
+      <Project>{93791AC7-BC51-4AD3-C81D-B44FADB48F38}</Project>
+      <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
       <Project>{C57B1ED4-2B52-4D32-4833-C29AB0188C61}</Project>
@@ -878,6 +886,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{0565A1D6-106A-7543-9674-7592C6EC689E}</Project>
       <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.csproj">
+      <Project>{441F75A0-EF89-8D10-CFE8-C3C513D73A20}</Project>
+      <Name>Unity.Recorder</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -24,14 +24,19 @@ public class AnimationLvlPlayer : LvlPlayer
     public override void Play()
     {
         _animator.speed = 1.0f;
-        _audio.Play();
+
+        if (!_audio.isPlaying)
+            _audio.Play();
+
+        _audio.pitch = 1f;
+
         _isPlaying = true;
     }
 
     public override void Pause()
     {
         _animator.speed = 0f;
-        _audio.Pause();
+        _audio.pitch = 0f;
         _isPlaying = false;
     }
 

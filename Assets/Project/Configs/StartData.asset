@@ -19,7 +19,7 @@ MonoBehaviour:
       DonePercent: 0
       Tries: 0
     - <LvlNumber>k__BackingField: 1
-      IsOpen: 0
+      IsOpen: 1
       DonePercent: 0
       Tries: 0
     - <LvlNumber>k__BackingField: 2
@@ -47,7 +47,7 @@ MonoBehaviour:
       DonePercent: 0
       Tries: 0
     - <LvlNumber>k__BackingField: 8
-      IsOpen: 0
+      IsOpen: 1
       DonePercent: 0
       Tries: 0
     - <LvlNumber>k__BackingField: 9
@@ -59,7 +59,7 @@ MonoBehaviour:
       DonePercent: 0
       Tries: 0
     - <LvlNumber>k__BackingField: 11
-      IsOpen: 1
+      IsOpen: 0
       DonePercent: 0
       Tries: 0
     - <LvlNumber>k__BackingField: 12

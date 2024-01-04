@@ -1,5 +1,5 @@
 {
-    "idSave": 40,
+    "idSave": 9,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
@@ -8,38 +8,38 @@
             {
                 "<LvlNumber>k__BackingField": 0,
                 "IsOpen": true,
-                "DonePercent": 0.0,
+                "DonePercent": 95.56438446044922,
                 "Tries": 1
             },
             {
                 "<LvlNumber>k__BackingField": 1,
+                "IsOpen": true,
+                "DonePercent": 97.22821807861328,
+                "Tries": 1
+            },
+            {
+                "<LvlNumber>k__BackingField": 2,
                 "IsOpen": false,
                 "DonePercent": 0.0,
                 "Tries": 0
             },
             {
-                "<LvlNumber>k__BackingField": 2,
-                "IsOpen": true,
-                "DonePercent": 100.0,
-                "Tries": 2
-            },
-            {
                 "<LvlNumber>k__BackingField": 3,
                 "IsOpen": true,
-                "DonePercent": 91.74283599853516,
-                "Tries": 1
+                "DonePercent": 0.0,
+                "Tries": 0
             },
             {
                 "<LvlNumber>k__BackingField": 4,
                 "IsOpen": true,
-                "DonePercent": 77.0701675415039,
+                "DonePercent": 82.63505554199219,
                 "Tries": 4
             },
             {
                 "<LvlNumber>k__BackingField": 5,
-                "IsOpen": true,
+                "IsOpen": false,
                 "DonePercent": 0.0,
-                "Tries": 1
+                "Tries": 0
             },
             {
                 "<LvlNumber>k__BackingField": 6,
@@ -50,32 +50,32 @@
             {
                 "<LvlNumber>k__BackingField": 7,
                 "IsOpen": true,
-                "DonePercent": 97.40531158447266,
-                "Tries": 1
+                "DonePercent": 21.7559814453125,
+                "Tries": 2
             },
             {
                 "<LvlNumber>k__BackingField": 8,
                 "IsOpen": true,
-                "DonePercent": 100.0,
-                "Tries": 3
+                "DonePercent": 97.78905487060547,
+                "Tries": 4
             },
             {
                 "<LvlNumber>k__BackingField": 9,
                 "IsOpen": true,
-                "DonePercent": 99.28701782226563,
-                "Tries": 3
+                "DonePercent": 0.0,
+                "Tries": 1
             },
             {
                 "<LvlNumber>k__BackingField": 10,
                 "IsOpen": true,
-                "DonePercent": 100.0,
-                "Tries": 7
+                "DonePercent": 0.0,
+                "Tries": 1
             },
             {
                 "<LvlNumber>k__BackingField": 11,
-                "IsOpen": true,
-                "DonePercent": 100.0,
-                "Tries": 20
+                "IsOpen": false,
+                "DonePercent": 0.0,
+                "Tries": 0
             },
             {
                 "<LvlNumber>k__BackingField": 12,
@@ -86,20 +86,20 @@
             {
                 "<LvlNumber>k__BackingField": 13,
                 "IsOpen": true,
-                "DonePercent": 100.0,
-                "Tries": 1
+                "DonePercent": 0.0,
+                "Tries": 0
             },
             {
                 "<LvlNumber>k__BackingField": 14,
-                "IsOpen": false,
+                "IsOpen": true,
                 "DonePercent": 0.0,
                 "Tries": 0
             },
             {
                 "<LvlNumber>k__BackingField": 15,
                 "IsOpen": true,
-                "DonePercent": 0.0,
-                "Tries": 0
+                "DonePercent": 99.3403091430664,
+                "Tries": 1
             },
             {
                 "<LvlNumber>k__BackingField": 16,
